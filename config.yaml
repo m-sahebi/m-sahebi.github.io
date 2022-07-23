@@ -113,7 +113,7 @@ params:
     - name: github
       url: 'https://github.com/m-sahebi'
     - name: email
-      url: 'mailto:msa.prog@gmail.com'
+      url: 'mailto:m@sahebi.org'
 
   # analytics:
   #   google:
