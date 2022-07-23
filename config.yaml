@@ -2,10 +2,6 @@ baseURL: 'https://m-sahebi.github.io/'
 theme: PaperMod
 defaultContentLanguage: en
 
-module:
-  imports:
-    - path: https://github.com/adityatelange/hugo-PaperMod.git
-
 menu:
 #  main:
 #    - identifier: categories
