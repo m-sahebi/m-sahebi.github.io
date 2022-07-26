@@ -35,9 +35,10 @@ languages:
         آموزش,
         برنامه نویسی,
         فرانت‌اند,
+        وب دولوپر,
         سفارش,
       ]
-    description: 'برنامه‌نویس و توسعه‌دهنده فرانت‌اند'
+    description: 'برنامه‌نویس و توسعه‌دهنده وب'
     label:
       text: '‌'
       icon: icon.svg
@@ -45,11 +46,11 @@ languages:
     profileMode:
       enabled: true
       title: محمود صاحبی
-      subtitle: 'Frontend Developer'
+      subtitle: 'Web Developer'
       imageUrl: 'me.jpg'
       imageWidth: 160
       imageHeight: 160
-      imageTitle: محمود صاحبی
+      imageTitle: Mahmoud Sahebi
       buttons:
         # - name: بلاگ
         #   url: posts
@@ -57,7 +58,7 @@ languages:
           url: about
   en:
     languageName: English
-    description: 'Frontend Developer'
+    description: 'Web Developer'
     title: Mahmoud Sahebi
     author: Mahmoud Sahebi
     weight: 2
@@ -69,7 +70,7 @@ languages:
     profileMode:
       enabled: true
       title: Mahmoud Sahebi
-      subtitle: 'Frontend Developer'
+      subtitle: 'Web Developer'
       imageUrl: 'me.jpg'
       imageWidth: 160
       imageHeight: 160
