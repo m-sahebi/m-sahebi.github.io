@@ -84,7 +84,7 @@ params:
 
   images: []
   DateFormat: '2 January, 2006'
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # auto, light
   disableThemeToggle: false
   ShowReadingTime: true
   ShowShareButtons: true
