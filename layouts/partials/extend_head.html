@@ -1,10 +1,31 @@
 {{- with site.Params.profileMode }}
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap');
+
   :root {
     --gradient-from-1: #f43f5e;
     --gradient-to-1: #8b5cf6;
     --gradient-from-2: #f59e0b;
     --gradient-to-2: #ef4444;
+  }
+
+  body {
+    background-image: radial-gradient(
+        rgba(127, 127, 127, 0.25) 10%,
+        transparent 10%
+      ),
+      radial-gradient(rgba(127, 127, 127, 0.25) 10%, transparent 10%) !important;
+    background-position: 0px 0px, 12px 12px !important;
+    background-size: 24px 24px !important;
+    background-color: var(--theme) !important;
+    font-family: 'Noto Sans Arabic', 'Cairo', -apple-system, BlinkMacSystemFont,
+      segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue,
+      sans-serif;
+  }
+
+  .post-content {
+    background-color: var(--theme);
+    border-radius: 16px;
   }
 
   .dark .logo img {
@@ -74,10 +95,6 @@
     content: '{{ .title | default site.Title | markdownify }}';
     --index: 2;
   }
-  [dir='rtl'] .anim-glitch::before,
-  [dir='rtl'] .anim-glitch::after {
-    content: 'محمود صاحبی';
-  }
 
   .anim-glitch * {
     --index: 1;
@@ -88,6 +105,7 @@
   .anim-glitch::after {
     font-size: 2.25rem;
     font-weight: bold;
+
     padding: 0;
     margin: 12px 0;
     line-height: 1.2;
