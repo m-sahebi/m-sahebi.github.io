@@ -1,0 +1,17 @@
+<script>
+  const el = document.body;
+
+  document.querySelector('head > meta[name=theme-color]').content =
+    getComputedStyle(el).getPropertyValue('--theme');
+
+  function callback(mutationList, observer) {
+    const mutation = mutationList[0];
+    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+      document.querySelector('head > meta[name=theme-color]').content =
+        getComputedStyle(el).getPropertyValue('--theme');
+    }
+  }
+
+  const observer = new MutationObserver(callback);
+  observer.observe(el, { attributes: true });
+</script>
