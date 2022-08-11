@@ -23,8 +23,10 @@ jobs:
 
       - name: Build
         env:
-          HUGO_googleAnalytics: ${{ secrets.HUGO_googleAnalytics }}
-        run: hugo --minify
+          HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS }}
+        run: |
+          echo "env analytics: $HUGO_GOOGLEANALYTICS"
+          hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
